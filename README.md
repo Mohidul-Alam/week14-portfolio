@@ -52,5 +52,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Mohidul Alam - [LinkedIn](https://www.linkedin.com/in/mdmohidul/)
 
-Project Link: [https://github.com/your_username/your_project_name](https://github.com/your_username/your_project_name)
 
