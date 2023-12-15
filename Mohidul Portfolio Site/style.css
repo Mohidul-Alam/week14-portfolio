@@ -1,0 +1,178 @@
+/* Reset and Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Chivo', Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 0.8rem 0;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    transition: color 0.2s;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #0099ff;
+}
+
+.navbar-toggler {
+    border-color: #fff;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbarScroll {
+    background-color: #292929;
+}
+
+/* Hero Section Styles */
+.bgimage {
+    height: 90vh;
+    background: url('images/heroImage.jpeg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-text {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero_title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero_desc {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* About Section */
+#about {
+    background: #fff;
+    padding: 3rem 0;
+    text-align: left;
+}
+
+.imageAboutPage {
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    transition: transform 0.3s;
+}
+
+.imageAboutPage:hover {
+    transform: scale(1.05);
+}
+
+/* Services Section */
+#services {
+    background: #f7f7f7;
+    padding: 3rem 0;
+}
+
+.servicesText.card {
+    background: #fff;
+    border: none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.servicesText.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Portfolio Section */
+#portfolio {
+    background: #fff;
+    padding: 3rem 0;
+}
+
+.portfolioContent {
+    background: #fff;
+    border: none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.portfolioContent:hover {
+    transform: translateY(-10px);
+}
+
+/* Contact Section */
+#contact {
+    background: #f7f7f7;
+    padding: 3rem 0;
+}
+
+/* Footer Styles */
+#footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+/* Social Media Icons */
+.social-icons {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 15px;
+    transition: color 0.2s;
+}
+
+.social-icons a:hover {
+    color: #0099ff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero_title {
+        font-size: 2.2rem;
+    }
+
+    .hero_desc {
+        font-size: 1.1rem;
+    }
+
+    .navbar {
+        padding: 0.6rem 0;
+    }
+
+    .imageAboutPage {
+        max-width: 90%;
+    }
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
